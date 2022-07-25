@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background: #060118;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Header */
+#navbar {
+  background: #fff;
+  left: 0;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  width: 100%;
+  z-index: 100;
+}
+
+#navbar-ul {
+  list-style: none;
+  text-align: right;
+  width: 100%;
+}
+
+#home-el {
+  border-top: 3px solid red;
+  display: inline-block;
+}
+
+#home-el-not {
+  border-top: none;
+  display: inline-block;
+}
+
+#services-el,
+#about-el,
+#skills-el,
+#portfolio-el,
+#contact-el {
+  display: inline-block;
+}
+
+#services-el-clicked,
+#about-el-clicked,
+#skills-el-clicked,
+#portfolio-el-clicked,
+#contact-el-clicked {
+  display: inline-block;
+  border-top: 3px solid red;
+}
+
+#home-el-not a,
+#services-el a,
+#about-el a,
+#skills-el a,
+#portfolio-el a,
+#contact-el a {
+  color: #a9a9a9;
+  display: inline-block;
+  font-size: 80%;
+  height: 100%;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#home-el a,
+#services-el-clicked a,
+#about-el-clicked a,
+#skills-el-clicked a,
+#portfolio-el-clicked a,
+#contact-el-clicked a {
+  color: #000;
+  display: inline-block;
+  font-size: 80%;
+  height: 100%;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* End of Header */
+
+/* Body prime */
+#body-prime {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/background.jpg") center/cover no-repeat fixed;
+  color: #fff;
+  height: 100vh;
+  padding: 200px 100px;
+}
+
+#body-prime-icons {
+  animation: bodyPrimeIcon 2s forwards 1;
+}
+
+@keyframes bodyPrimeIcon {
+  from {
+    opacity: 0;
+    width: 20%;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+#prime-icon-facebook {
+  background: url("./images/icon-facebook.png");
+  display: inline-block;
+  height: 24px;
+  margin-right: 1%;
+  width: 24px;
+}
+
+#prime-icon-instagram {
+  background: url("./images/icon-instagram.png");
+  display: inline-block;
+  height: 24px;
+  margin-right: 1%;
+  width: 24px;
+}
+
+#prime-icon-twitter {
+  background: url("./images/icon-twitter.png");
+  display: inline-block;
+  height: 24px;
+  margin-right: 1%;
+  width: 24px;
+}
+
+#prime-icon-whatsapp {
+  background: url("./images/icon-whatsapp.png");
+  display: inline-block;
+  height: 24px;
+  margin-right: 1%;
+  width: 24px;
+}
+
+#body-prime h2 {
+  animation: portfolio-name 4s forwards 1;
+  font-size: 300%;
+  font-weight: 200;
+  margin: 20px 0px;
+}
+
+@keyframes portfolio-name {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#body-prime h1 {
+  animation: designerBox 3s infinite alternate;
+  animation-delay: 1s;
+  border: 3px solid #a9a9a9;
+  display: inline-block;
+  font-size: 400%;
+  font-weight: 200;
+  padding: 10px 15px;
+}
+
+@keyframes designerBox {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(20%, 0);
+  }
+
+  75% {
+    transform: translate(-20%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/* End of Body prime */
+
+/* Services */
+#services {
+  color: #fff;
+  height: 100vh;
+  padding-top: 120px;
+  width: 100%;
+}
+
+#services h1 {
+  letter-spacing: 3px;
+  margin-bottom: 100px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#services .row {
+  height: auto;
+}
+
+#services .row .column {
+  float: left;
+  padding: 0px 50px;
+  width: 33.3%;
+}
+
+#logo-html {
+  background: url("./images/logo-html.png") center/cover no-repeat;
+  border-radius: 300px;
+  height: 70px;
+  margin-bottom: 30px;
+  width: 70px;
+}
+
+#logo-css {
+  background: url("./images/logo-css.png") center/cover no-repeat;
+  border-radius: 300px;
+  height: 70px;
+  margin-bottom: 30px;
+  width: 70px;
+}
+
+#logo-uiux {
+  background: url("./images/logo-uiux.png") center/cover no-repeat;
+  border-radius: 300px;
+  height: 70px;
+  margin-bottom: 30px;
+  width: 70px;
+}
+
+#services .card h2 {
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#services .card p {
+  font-size: 90%;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+#services .card .read-more {
+  align-items: center;
+  display: flex;
+  height: 20px;
+}
+
+#html-read,
+#css-read,
+#uiux-read {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  font-size: 90%;
+  margin-right: 3px;
+  opacity: 0;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: -10;
+}
+
+@keyframes readMore {
+  from {
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+  }
+
+  to {
+    opacity: 1;
+    position: static;
+    z-index: 0;
+  }
+}
+@keyframes readMoreDisappear {
+  from {
+    opacity: 1;
+    position: static;
+    z-index: 0;
+  }
+
+  to {
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+  }
+}
+
+#html-line,
+#css-line,
+#uiux-line {
+  border: 1px solid #ff0000;
+  display: inline-block;
+  height: 0.5px;
+  width: 50px;
+}
+
+@keyframes lineWidthDecrease {
+  from {
+    transform: translate(100%, 0);
+    width: 50px;
+  }
+
+  to {
+    transform: translate(0, 0);
+    width: 10px;
+  }
+}
+@keyframes lineWidthIncrease {
+  from {
+    transform: translate(-100%, 0);
+    width: 10px;
+  }
+
+  to {
+    transform: translate(0, 0);
+    width: 50px;
+  }
+}
+/* End of Services */
+
+/* About me */
+#about-me {
+  width: 100%;
+  color: #fff;
+  padding: 100px 0px;
+}
+
+#about-me h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+#about-me .sub-about {
+  padding: 40px 50px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#about-me .division-one {
+  width: 50%;
+  height: 400px;
+  background: url("./images/bkg-laptop.jpg") center/cover no-repeat fixed;
+  border-radius: 3000px;
+}
+
+#about-me .division-two {
+  width: 50%;
+  padding: 0px 50px;
+}
+
+#about-me .division-two h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#about-me .brief-intro {
+  font-size: 90%;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+#about-me table {
+  border-spacing: 0px 20px;
+  width: 100%;
+}
+
+#about-me table span {
+  color: #ff0000;
+}
+/* End of About me */
+
+/* Skills */
+#my-skills {
+  width: 100%;
+  color: #fff;
+  padding: 100px 0px;
+}
+
+#my-skills h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+#my-skills .sub-skills {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-skills .div-one {
+  height: 300px;
+  padding-right: 50px;
+  width: 50%;
+}
+
+#my-skills .div-one p {
+  line-height: 1.8;
+  color: #f2f2f2;
+  letter-spacing: 1px;
+  font-size: 90%;
+}
+
+#my-skills .div-one p.paragrah-one {
+  margin: 20px 0px;
+}
+
+#my-skills .div-two {
+  width: 50%;
+}
+
+#my-skills .div-two .skill-name {
+  margin-bottom: 10px;
+}
+
+#my-skills .div-two .skill-line {
+  margin-bottom: 40px;
+  background: #ff0000;
+  height: 1px;
+  padding: 1px;
+}
+
+#my-skills .div-two .html-skill-line {
+  width: 70%;
+}
+
+#my-skills .div-two .css-skill-line {
+  width: 50%;
+}
+
+#my-skills .div-two .uiux-skill-line {
+  width: 90%;
+}
+/* End of Skills */
+
+/* Portfolio */
+#my-portfolio {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid;
+  color: #fff;
+  padding: 100px 0px;
+}
+
+#my-portfolio h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+#my-portfolio .sub-portfolio {
+  height: 100%;
+}
+/* End of Portfolio */
+
+/* Contact */
+#contact {
+  width: 100%;
+  color: #fff;
+  padding-top: 100px;
+}
+
+#contact h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+#contact .contact-row {
+  padding-left: 50px;
+}
+
+#contact .contact-row .contact-column {
+  width: 25%;
+  float: left;
+  height: 100px;
+}
+
+#contact .contact-row .contact-card {
+  width: 100%;
+  height: 100%;
+}
+
+#contact .contact-row .icon {
+  height: 30px;
+  width: 30px;
+}
+
+#contact .contact-row .icon-address {
+  background: url("./images/icon-address.png") center/cover no-repeat;
+}
+
+#contact .contact-row .icon-phone {
+  background: url("./images/icon-phone.png") center/cover no-repeat;
+}
+
+#contact .contact-row .icon-email {
+  background: url("./images/icon-email.png") center/cover no-repeat;
+}
+
+#contact .contact-row .icon-chat {
+  background: url("./images/icon-chat.png") center/cover no-repeat;
+}
+
+#contact .contact-row .contact-column .contact-card p {
+  color: #a9a9a9;
+}
+
+#contact .contact-row .contact-column .contact-card p.contact-name {
+  margin: 20px 0px 10px 0px;
+  color: #fff;
+}
+
+#contact .sub-two-contact {
+  padding-bottom: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-division-one {
+  padding-left: 50px;
+  width: 40%;
+  height: 100%;
+}
+
+#contact-division-one h2 {
+  margin-bottom: 20px;
+}
+
+.connect-icon-div {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.connect-icon-div .icon-connect-facebook {
+  display: inline-block;
+  background: url("./images/icon-connect-facebook.png");
+  width: 30px;
+  height: 30px;
+}
+
+.connect-icon-div .icon-connect-instagram {
+  display: inline-block;
+  background: url("./images/icon-connect-instagram.png");
+  width: 30px;
+  height: 30px;
+}
+
+.connect-icon-div .icon-connect-twitter {
+  display: inline-block;
+  background: url("./images/icon-connect-twitter.png");
+  width: 30px;
+  height: 30px;
+}
+
+.connect-icon-div .icon-connect-whatsapp {
+  display: inline-block;
+  background: url("./images/icon-connect-whatsapp.png");
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+#contact-division-one .connect-icon-div .connect-anchor {
+  color: #fff;
+  padding-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#contact-division-two {
+  height: 100%;
+  width: 60%;
+  padding-right: 50px;
+}
+
+#contact-division-two h2 {
+  margin-bottom: 40px;
+}
+
+#contact-division-two .contact-inline-div {
+  display: inline-block;
+  width: 49.7%;
+  margin-bottom: 30px;
+}
+
+#contact-division-two .contact-inline-div input,
+#subject-div input {
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s;
+  background: rgba(169, 169, 169, 0.1);
+}
+
+#contact-division-two .contact-inline-div input:hover,
+#subject-div input:hover {
+  background: rgba(169, 169, 169, 0.2);
+}
+
+#textarea-div {
+  margin-top: 30px;
+}
+
+#textarea-div textarea {
+  width: 100%;
+  height: 140px;
+  border: none;
+  margin-top: 5px;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s;
+  background: rgba(169, 169, 169, 0.1);
+}
+
+#textarea-div textarea:hover {
+  background: rgba(169, 169, 169, 0.2);
+}
+
+#button-div {
+  width: 100%;
+  text-align: right;
+  margin-top: 30px;
+}
+
+#button-div button {
+  color: #fff;
+  background: rgba(255, 0, 0, 0.8);
+  padding: 15px 20px;
+  cursor: pointer;
+}
+/* End of Contact */
