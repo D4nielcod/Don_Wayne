@@ -260,8 +260,8 @@ body {
   height: auto;
   opacity: 0;
   padding: 100px 0px;
-  transition: all 2s;
-  transform: translate(0, -40px);
+  transition: all 1s;
+  transform: translate(0, 70px);
   width: 100%;
 }
 
@@ -383,8 +383,8 @@ body {
   height: auto;
   opacity: 0;
   padding: 100px 0px;
-  transition: all 2s;
-  transform: translate(0, 40px);
+  transition: all 1s;
+  transform: translate(0, 70px);
   width: 100%;
 }
 
@@ -501,8 +501,8 @@ body {
   height: auto;
   opacity: 0;
   padding: 100px 0px;
-  transform: translate(0, -40px);
-  transition: all 2s;
+  transform: translate(0, 70px);
+  transition: all 1s;
   width: 100%;
 }
 
@@ -608,8 +608,8 @@ body {
   height: 100vh;
   opacity: 0;
   padding: 100px 0px;
-  transform: translate(0, 40px);
-  transition: all 2s;
+  transform: translate(0, 70px);
+  transition: all 1s;
   width: 100%;
 }
 
@@ -631,8 +631,8 @@ body {
   color: #fff;
   opacity: 0;
   padding-top: 100px;
-  transform: translate(0, -40px);
-  transition: all 2s;
+  transform: translate(0, 70px);
+  transition: all 1s;
   width: 100%;
 }
 
